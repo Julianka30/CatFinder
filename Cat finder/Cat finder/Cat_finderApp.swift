@@ -9,6 +9,13 @@ import SwiftUI
 
 @main
 struct Cat_finderApp: App {
+//    init() {
+//        URLSession.shared.dataTask(with: URL(string: "https://www.google.com/search?q=cats")!) { data, _, error in
+//            print(data)
+//            print(error)
+//        }.resume()
+//    }
+    
     var body: some Scene {
         WindowGroup {
             ContentView()

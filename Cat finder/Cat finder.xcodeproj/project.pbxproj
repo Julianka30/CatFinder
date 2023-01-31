@@ -11,6 +11,9 @@
 		A398206A290BF01900B9D0BE /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3982069290BF01900B9D0BE /* ContentView.swift */; };
 		A398206C290BF01A00B9D0BE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A398206B290BF01A00B9D0BE /* Assets.xcassets */; };
 		A398206F290BF01A00B9D0BE /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A398206E290BF01A00B9D0BE /* Preview Assets.xcassets */; };
+		A3E47E91291A247F00781581 /* GreetingScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3E47E90291A247F00781581 /* GreetingScreen.swift */; };
+		A3E47E93291A263D00781581 /* CriteriaScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3E47E92291A263D00781581 /* CriteriaScreen.swift */; };
+		A3E47E95291A270000781581 /* FoundCatsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3E47E94291A270000781581 /* FoundCatsView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,10 +22,21 @@
 		A3982069290BF01900B9D0BE /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		A398206B290BF01A00B9D0BE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A398206E290BF01A00B9D0BE /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		A3E47E7C291A221800781581 /* Second_Screen.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Second_Screen.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A3E47E90291A247F00781581 /* GreetingScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GreetingScreen.swift; sourceTree = "<group>"; };
+		A3E47E92291A263D00781581 /* CriteriaScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CriteriaScreen.swift; sourceTree = "<group>"; };
+		A3E47E94291A270000781581 /* FoundCatsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoundCatsView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		A3982061290BF01900B9D0BE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A3E47E79291A221800781581 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -44,6 +58,7 @@
 			isa = PBXGroup;
 			children = (
 				A3982064290BF01900B9D0BE /* Cat finder.app */,
+				A3E47E7C291A221800781581 /* Second_Screen.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -53,6 +68,9 @@
 			children = (
 				A3982067290BF01900B9D0BE /* Cat_finderApp.swift */,
 				A3982069290BF01900B9D0BE /* ContentView.swift */,
+				A3E47E90291A247F00781581 /* GreetingScreen.swift */,
+				A3E47E92291A263D00781581 /* CriteriaScreen.swift */,
+				A3E47E94291A270000781581 /* FoundCatsView.swift */,
 				A398206B290BF01A00B9D0BE /* Assets.xcassets */,
 				A398206D290BF01A00B9D0BE /* Preview Content */,
 			);
@@ -87,6 +105,23 @@
 			productReference = A3982064290BF01900B9D0BE /* Cat finder.app */;
 			productType = "com.apple.product-type.application";
 		};
+		A3E47E7B291A221800781581 /* Second_Screen */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A3E47E87291A221900781581 /* Build configuration list for PBXNativeTarget "Second_Screen" */;
+			buildPhases = (
+				A3E47E78291A221800781581 /* Sources */,
+				A3E47E79291A221800781581 /* Frameworks */,
+				A3E47E7A291A221800781581 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Second_Screen;
+			productName = Second_Screen;
+			productReference = A3E47E7C291A221800781581 /* Second_Screen.app */;
+			productType = "com.apple.product-type.application";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -94,11 +129,14 @@
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
-				LastSwiftUpdateCheck = 1400;
+				LastSwiftUpdateCheck = 1410;
 				LastUpgradeCheck = 1400;
 				TargetAttributes = {
 					A3982063290BF01900B9D0BE = {
 						CreatedOnToolsVersion = 14.0.1;
+					};
+					A3E47E7B291A221800781581 = {
+						CreatedOnToolsVersion = 14.1;
 					};
 				};
 			};
@@ -116,6 +154,7 @@
 			projectRoot = "";
 			targets = (
 				A3982063290BF01900B9D0BE /* Cat finder */,
+				A3E47E7B291A221800781581 /* Second_Screen */,
 			);
 		};
 /* End PBXProject section */
@@ -130,6 +169,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		A3E47E7A291A221800781581 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -137,8 +183,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A3E47E91291A247F00781581 /* GreetingScreen.swift in Sources */,
+				A3E47E95291A270000781581 /* FoundCatsView.swift in Sources */,
 				A398206A290BF01900B9D0BE /* ContentView.swift in Sources */,
+				A3E47E93291A263D00781581 /* CriteriaScreen.swift in Sources */,
 				A3982068290BF01900B9D0BE /* Cat_finderApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A3E47E78291A221800781581 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -267,6 +323,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Cat finder/Preview Content\"";
+				DEVELOPMENT_TEAM = 5Q5S937375;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -295,6 +352,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Cat finder/Preview Content\"";
+				DEVELOPMENT_TEAM = 5Q5S937375;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -308,6 +366,64 @@
 				);
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "-.Cat-finder";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		A3E47E88291A221900781581 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Second_Screen/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "-.Second-Screen";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		A3E47E89291A221900781581 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Second_Screen/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "-.Second-Screen";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -332,6 +448,15 @@
 			buildConfigurations = (
 				A3982073290BF01A00B9D0BE /* Debug */,
 				A3982074290BF01A00B9D0BE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A3E47E87291A221900781581 /* Build configuration list for PBXNativeTarget "Second_Screen" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A3E47E88291A221900781581 /* Debug */,
+				A3E47E89291A221900781581 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
