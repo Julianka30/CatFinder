@@ -1,4 +1,4 @@
-# CatFinderProject
+# CatFinder
 
 App helps to find cats by some parameters using REST API service.
 
